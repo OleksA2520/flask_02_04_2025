@@ -32,9 +32,9 @@ for i in frange(1, 100, 3.5):
 # THIRD TASK
 
 with open('text.txt', 'w') as file:
-    text_content = file.write('Hi')
+    text_content = str(file.write('Hi'))
 
-    print(f"{bcolors.OKBLUE}{str(text_content)}{bcolors.ENDC} ..and bye")
+    print(f"{bcolors.OKBLUE}{text_content}{bcolors.ENDC} ..and bye")
     print(type(text_content))
 
 print(f" Repeat {bcolors.FAIL} {bcolors.YELLOWBG} {text_content} {bcolors.ENDC} to {'text.txt'}")
